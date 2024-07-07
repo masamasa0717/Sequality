@@ -9,6 +9,15 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+      double average1,average2 = 0;
+      Calculate math = new Calculate();
+
+      System.out.println(new App().getGreeting());
+
+      System.out.println("Sum of 2 and 3 is " + math.sum(2,3) + ". Average is " + math.average(2,3));
+
+      System.out.println("Sum of 1 to 10 is " + math.ToSum(1,10) + ". Average is " + math.ToSumAverage(1,10));
+
+      System.out.println("Sum of odd of 1 to 10 is " + math.odd(1,10) + ". Sum of even is " + math.even(1,10));
     }
 }
